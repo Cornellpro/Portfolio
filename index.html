@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/010d390f1b.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <title>Cornell pro</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(document).on('click', '.custom-toggle', function (e) {
+                e.preventDefault();
+
+
+                $('.custom-body').hide();
+                
+                var click_body = $(this).attr('data-board');
+                
+                $(click_body).show();
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="png-bg">
+        <div class="container">
+            <div class="row">
+                <!--This div for profile sectiion (left-column)-->
+                <aside class="col-12 col-md-12 col-xl-3">
+                    <div class="sidebar shadow">
+                        <img src="images/profile.png" class="avatar avatar--180">
+                        <div class="text-center">
+                            <h3 class="title title--h3 sidebar__user-name"> Cornelius <span>O.</span></h3>
+                            <div class="badge badge--light">Frontend Developer</div>
+                            <div class="social">
+                                <a href="https://www.github.com/cornellpro" target="_blank" class="social__link"><i class="fab fa-github font-icon"></i></a>
+                                <a href="https://www.linkedin.com/in/cornellpro" target="_blank" class="social__link"><i class="fab fa-linkedin-in font-icon"></i></a>
+                                <a href="https://www.twitter.com/cornellpro" target="_blank" class="social__link"><i class="fab fa-twitter font-icon"></i></a>
+                                <a href="https://www.facebook.com/cornellpro" target="_blank" class="social__link"><i class="fab fa-facebook-f font-icon"></i></a>
+                            </div>
+                        </div>
+                        <div class="sidebar__info">
+                            <ul class="contacts-block">
+                                <li class="contacts-block__item"><i class="fas fa-mobile-alt font-icon"></i>+234 (80) 8809-0573 </li>
+                                
+                                <li class="contacts-block__item"><a href="mailto:work@corrnell.pro"><i class="fas fa-envelope font-icon"></i>work@cornell.pro </a></li>
+                                
+                                <li class="contacts-block__item"><a href="skype:hiceyme"><i class="fab fa-skype font-icon"></i>hiceyme </a></li>
+
+                                <li class="contacts-block__item"><i class="fas fa-map-marker-alt font-icon"></i>Lagos, Nigeria </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            
+                <!--This div for content section(right-column)-->
+                <div class="col-12 col-md-12 col-xl-9 main">
+                    <div class="box shadow">                        
+                        <!--ABOUT ME-->
+                        <div id="about-me-box" class="custom-body">
+                            <div class="">
+                                <div class="pb-0 pb-sm-2">
+                                    <h1  class="title title--h1 title__separate">About Me</h1>
+                                    <p >I’m a self-taught and highly competent frontend developer with 4 years experience in building web applications.</p>
+                                    <p >I can solve any problem html,css or Javascript related. Might take time but I always figure these things out. I’m also proficient in Git, Wordpress, Html5, CSS3,  Bootstrap and JQuery. When I’m not doing anything  code related, I do these (tooltips with links).</p>
+                                </div>
+                                <div class="box-inner">
+                                    <h1 class="title title--h1 title__separate">What i do</h1>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="case-item box box__second">
+                                                <img src="images/Group 58.svg" alt="" class="case-item__icon">
+                                                <div>
+                                                    <h3 class="title title--h5">Web Development</h3>
+                                                    <p class="case-item__caption"> I build web applications according to client’s requirements, I write clean, maintainable and well documented codes and follow all coding standard and principles. Check my recent works(tooltip link) </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="case-item box box__second">
+                                                <img src="images/Group 57.svg" alt="" class="case-item__icon">
+                                                <div >
+                                                    <h3 class="title title--h5">UI Design</h3>
+                                                    <p class="case-item__caption"> I design clean user interface for mobile and desktop applications. Might even give you a beautiful and resourceful product design when I’m beast mode. I’m king kong on PS, Adobe Xd and Figma. (wink) Peep my work(tooltip link) </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="case-item box box__second">
+                                                <img src="images/Group 56.svg" alt="" class="case-item__icon">
+                                                <div >
+                                                    <h3 class="title title--h5">Blogging</h3>
+                                                    <p class="case-item__caption"> I am a tech enthusiast, I love writing gadgets reviews and tips. If you’re not sure about the next Mac, windows, smart phone or device that is worth your dollar, my blog will help you make up your mind. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="case-item box box__second">
+                                                <img src="images/Group 56.svg" alt="" class="case-item__icon">
+                                                <div>
+                                                    <h3 class="title title--h5">Seo Specialist</h3>
+                                                    <p class="case-item__caption"> I have deep understanding of seo and how it works, in the past two years i have built various seo tools to help tackle common seo problems, fix seo related issues on webpages and helped optimize websites for better seo ranking. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---Reviews--->
+                            <div class="reviews box-inner box-inner--white"> 
+                                <h6>Reviews</h6>
+                                <div class="review-boxes">
+                
+                                        <!--review1-->
+                                        <div class="reviews-box">
+                                            <img src="images/Precious.svg">
+                                            <h5 class="reviewer-name">Mary Ben</h5>
+                                            <p>I had a really good experience working with Cornell. He not only exceeded my expectations but he also took the time to propose better features. He knows what he's doing and he does it right the first time! I will definitely work with him in the near future. Thanks a ton Cornell!
+                                        </p>
+                                        </div>
+                                        <!--review2-->
+                                        <div class="reviews-box">
+                                            <img src="images/profile.png">
+                                            <h5 class="reviewer-name">Mary Ben</h5>
+                                            <p>I had a really good experience working with Cornell. He not only exceeded my expectations but he also took the time to propose better features. He knows what he's doing and he does it right the first time! I will definitely work with him in the near future. Thanks a ton Cornell!
+                                        </p>
+                                        </div>
+                                        <!--review3-->
+                                        <div class="reviews-box">
+                                            <img src="images/profile2.png">
+                                            <h5 class="reviewer-name">Mary Ben</h5>
+                                            <p>I had a really good experience working with Cornell. He not only exceeded my expectations but he also took the time to propose better features. He knows what he's doing and he does it right the first time! I will definitely work with him in the near future. Thanks a ton Cornell!
+                                        </p>
+                                        </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--RESUME-->
+                        <div id="work-history" class="custom-body">
+                            <h4 class="title title--h1 title__separate">Resume</h4>
+                            <div class="experience">
+                                <i class="fas fa-briefcase"></i>
+                                <h5>Experience</h5>
+                            </div>
+                            <div>
+                                <ul class="row">
+                                    <li class="col-12 col-lg-6">
+                                        <div class="job-main">
+                                            <div class="job-title">
+                                                <i class="far fa-check-circle"></i>
+                                                <h6>Upwork</h6>
+                                            </div>
+                                            <div class="p-div">
+                                                <p class="job-date">2018 - present</p>
+                                                <p class="job-description">
+                                                    Currently a freelancer on upwork with more than 15 completed projects and over 150 work hours.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 col-lg-6">
+                                        <div class="job-main">
+                                            <div class="job-title">
+                                                <i class="far fa-check-circle"></i>
+                                                <h6>Microsoft</h6>
+                                            </div>
+                                            <div class="p-div">
+                                                <p class="job-date">April 2019 - present</p>
+                                                <p class="job-description">
+                                                    Worked as a Junior Software Developer at Microsoft.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 col-lg-6">
+                                        <div class="job-main">
+                                            <div class="job-title">
+                                                <i class="far fa-check-circle"></i>
+                                                <h6>Globasure Technologies Ltd</h6>
+                                            </div>
+                                            <div class="p-div">
+                                                <p class="job-date">March 2013 - Jan 2015</p>
+                                                <p class="job-description">
+                                                    Worked as a software developer at Globasure Ltd.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 col-lg-6">
+                                        <div class="job-main">
+                                            <div class="job-title">
+                                                <i class="far fa-check-circle"></i>
+                                                <h6>Plant for the Planet Organisation
+                                                </h6>
+                                            </div>
+                                            <div class="p-div">
+                                                <p class="job-date">April 2007 - Nov 2019</p>
+                                                <p class="job-description">
+                                                    Worked as a Software Developer at Plant-for-the-Planet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--CONTACT ME-->
+                        <div id="contact-me" class="custom-body">
+                            <h1 class="title title--h1 title__separate">Contact</h1>
+                            <h5>Contact Form</h5>
+                            <form class="contact-form">
+                                <!---->
+                                <div class="row">
+                                    <div class="form-group col-12 col-md-6">
+                                        <i class="far fa-user font-icon"></i>
+                                        <input type="text" id="name" placeholder="Full name" autocomplete="on" class="input form-control">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-12 col-md-6">
+                                        <i class="far fa-envelope font-icon"></i>
+                                        <input type="email" id="email" placeholder="Email address" autocomplete="on" class="input form-control">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-12 col-md-12">
+                                        <textarea id="message" placeholder="Your Message" rows="4" class="textarea form-control"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <button type="submit" class="send-btn">
+                                        <i class="far fa-paper-plane"></i><span>Send Message</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--GALLERY MODAL-->
+
+    <div id="gallery" class="modal fade right" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog modal-xl modal-notify modal-info" role="document">
+            <div class="modal-content">
+                <!--Modal Body-->
+                <!--Gallery-->
+                <div class="modal-body custom-modal-body">
+                    <h1 class="gallery-title">PROJECTS</h1>
+                    <div class="gallery-btns">
+                        <a href="#" class="mdl-btn">See Live</a>
+                        <a href="#" class="mdl-btn">Source</a>
+                        <!--close button at header-->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" ><i class="far fa-times-circle"></i></span>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="gallery-main">
+
+
+
+
+
+
+
+                            <section class="mh-portfolio" id="mh-portfolio">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="section-title col-sm-12">
+                                            <h3>Recent Projects</h3>
+                                        </div>
+                                        <!-- add space -->
+                                        <div class="part col-sm-12">
+                                            <div class="portfolio-nav col-sm-12" id="filter-button">
+                                                <ul>
+                                                    <li data-filter="*" class="current">
+                                                        <span>All Categories</span>
+                                                    </li>
+                                                    <li data-filter=".user-interface" class="current">
+                                                        <span>Web Design</span>
+                                                    </li>
+                                                    <li data-filter=".branding" >
+                                                        <span>Branding</span>
+                                                    </li>
+                                                    <li data-filter=".mockups">
+                                                        <span>Mockups</span>
+                                                    </li>
+                                                    <li data-filter=".photography">
+                                                        <span>Photography</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="mh-project-gallery col-sm-12" id="project-gallery">
+                                                <div class="portfolioContainer row">
+                                                    <div class="grid-item col-md-4 user-interface">
+                                                        <figure>
+                                                            <img src="images/ex1.png" alt="">
+                                                            <figcaption class="fig-caption">
+                                                                <i class="fa fa-search"></i>
+                                                                <h5 class="title2">Creative Design</h5>
+                                                                <span class="sub-title">Photography</span>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+
+                                                    <div class="grid-item col-md-4 ui mockup">
+                                                        <figure>
+                                                            <img src="images/ex2.png" alt="">
+                                                            <figcaption class="fig-caption">
+                                                                <i class="fa fa-search"></i>
+                                                                <h5 class="title2">Creative Design</h5>
+                                                                <span class="sub-title">Photography</span>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+
+                                                    <div class="grid-item col-md-4 user-interface">
+                                                        <figure>
+                                                            <img src="images/ex6.png" alt="">
+                                                            <figcaption class="fig-caption">
+                                                                <i class="fa fa-search"></i>
+                                                                <h5 class="title2">Creative Design</h5>
+                                                                <span class="sub-title">Photography</span>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+
+                                                    <div class="grid-item col-md-4 branding">
+                                                        <figure>
+                                                            <img src="images/ex4.png" alt="">
+                                                            <figcaption class="fig-caption">
+                                                                <i class="fa fa-search"></i>
+                                                                <h5 class="title2">Creative Design</h5>
+                                                                <span class="sub-title">Photography</span>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+
+                                                    <div class="grid-item col-md-4 user-interface">
+                                                        <figure>
+                                                            <img src="images/ex5.png" alt="">
+                                                            <figcaption class="fig-caption">
+                                                                <i class="fa fa-search"></i>
+                                                                <h5 class="title2">Creative Design</h5>
+                                                                <span class="sub-title">Photography</span>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+
+                                                    <div class="grid-item col-md-4 branding">
+                                                        <figure>
+                                                            <img src="images/ex6.png" alt="">
+                                                            <figcaption class="fig-caption">
+                                                                <i class="fa fa-search"></i>
+                                                                <h5 class="title2">Creative Design</h5>
+                                                                <span class="sub-title">Photography</span>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    
+                                                    <div class="grid-item col-md-4 ui">
+                                                        <figure>
+                                                            <img src="images/ex7.png" alt="">
+                                                            <figcaption class="fig-caption">
+                                                                <i class="fa fa-search"></i>
+                                                                <h5 class="title2">Creative Design</h5>
+                                                                <span class="sub-title">Photography</span>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+
+                                                    <div class="grid-item col-md-4 branding">
+                                                        <figure>
+                                                            <img src="images/ex8.png" alt="">
+                                                            <figcaption class="fig-caption">
+                                                                <i class="fa fa-search"></i>
+                                                                <h5 class="title2">Creative Design</h5>
+                                                                <span class="sub-title">Photography</span>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+
+                                                    <div class="grid-item col-md-4 branding">
+                                                        <figure>
+                                                            <img src="images/ex9.png" alt="">
+                                                            <figcaption class="fig-caption">
+                                                                <i class="fa fa-search"></i>
+                                                                <h5 class="title2">Creative Design</h5>
+                                                                <span class="sub-title">Photography</span>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+
+
+
+
+                            <!-- <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="thumbnails">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="stand-alone-web">
+                                        <div class="description">
+                                            <li><P>Name: <span>Example.web</span></P></li>
+                                            <li><P>Category: <span>Landing Page</span></P></li>
+                                            <li><P>Time Taken: <span>13 Hours</span></P></li>
+                                            <li><P>Stack: 
+                                                    <span class="stacks">
+                                                        <span>Html</span>
+                                                        <span>CSS</span>
+                                                        <span>Javascript</span>
+                                                        <span>Bootsrap</span>
+                                                    </span>
+                                                </P>
+                                            </li>
+                                        </div>
+                                        <div class="scaled-web">
+                                            <img src="images/ex2.png" alt="example Web" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="menu-div">    
+            <ul class="nav-ul">
+                <li class="nav-item">
+                    <a href="/about-me-box" class="custom-toggle" data-board="#about-me-box">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/work-history" class="custom-toggle" data-board="#work-history">Work History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact-me" class="custom-toggle" data-board="#contact-me">Contact Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="" data-toggle="modal" data-target="#gallery">Project</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- bootsrap Js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
