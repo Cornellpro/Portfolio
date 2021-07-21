@@ -7,27 +7,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/010d390f1b.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
     <title>Cornell pro</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            $(document).on('click', '.custom-toggle', function (e) {
-                e.preventDefault();
-
-
-                $('.custom-body').hide();
-                
-                var click_body = $(this).attr('data-board');
-                
-                $(click_body).show();
-
-            });
-        });
-    </script>
 </head>
 <body>
+    <!-- mobile hamburger menu -->
+    <div class="hamburger-div" onclick="navMenu()">
+        <button class="hamburger" aria-label="Menu Options">
+          <span class="hamburger-bars"></span>
+        </button>
+    </div>
+
+    <!-- nav bar -->
+    <nav id="navMenu" class="mobile-menu-box fade-this">
+        <div class="moblie-menu-div">
+            <nav class="mobile-nav-bar">
+                <a href="" class="custom-toggle" data-board="#about-me-box">About Me</a>
+                <a href="" class="custom-toggle" data-board="#work-history">Work History</a>
+                <a href="" class="custom-toggle" data-board="#contact-me">Contact Me</a>
+                <a href="" class="" data-toggle="modal" data-target="#gallery">Project</a>
+            </nav>
+        </div>
+    </nav>
+
+
+    
     <div class="png-bg">
         <div class="container">
             <div class="row">
@@ -61,7 +65,17 @@
             
                 <!--This div for content section(right-column)-->
                 <div class="col-12 col-md-12 col-xl-9 main">
+                    
                     <div class="box shadow">
+                         <!-- nav bar -->
+                        <nav class="desktop-nav-menu">
+                            <div class="desktop-nav-bar">
+                                <a href="" class="custom-toggle" data-board="#about-me-box">About Me</a>
+                                <a href="" class="custom-toggle" data-board="#work-history">Work History</a>
+                                <a href="" class="custom-toggle" data-board="#contact-me">Contact Me</a>
+                                <a href="" class="" data-toggle="modal" data-target="#gallery">Project</a>
+                            </div>
+                        </nav>
 
                         <!--ABOUT ME-->
                         <div id="about-me-box" class="custom-body">
@@ -358,106 +372,8 @@
                                     </figcaption>
                                 </figure>
                                 <div class="portfolio-img-btn">
-                                    <a href="#" class="portfolio-img-links">Live</a>
-                                    <a href="#" class="portfolio-img-links">Source Code</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-img-div col-md-4">
-                                <figure class="portfolio-img-figure">
-                                    <img src="images/ex2.png" alt="" class="portfolio-image">
-                                    <figcaption class="portfolio-img-figcaption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Creative Design</h5>
-                                        <span class="portfolio-img-sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                                <div class="portfolio-img-btn">
-                                    <a href="#" class="portfolio-img-links">Live</a>
-                                    <a href="#" class="portfolio-img-links">Source Code</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-img-div col-md-4">
-                                <figure class="portfolio-img-figure">
-                                    <img src="images/ex8.png" alt="" class="portfolio-image">
-                                    <figcaption class="portfolio-img-figcaption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Creative Design</h5>
-                                        <span class="portfolio-img-sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                                <div class="portfolio-img-btn">
-                                    <a href="#" class="portfolio-img-links">Live</a>
-                                    <a href="#" class="portfolio-img-links">Source Code</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-img-div col-md-4">
-                                <figure class="portfolio-img-figure">
-                                    <img src="images/ex4.png" alt="" class="portfolio-image">
-                                    <figcaption class="portfolio-img-figcaption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Creative Design</h5>
-                                        <span class="portfolio-img-sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                                <div class="portfolio-img-btn">
-                                    <a href="#" class="portfolio-img-links">Live</a>
-                                    <a href="#" class="portfolio-img-links">Source Code</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-img-div col-md-4">
-                                <figure class="portfolio-img-figure">
-                                    <img src="images/ex5.png" alt="" class="portfolio-image">
-                                    <figcaption class="portfolio-img-figcaption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Creative Design</h5>
-                                        <span class="portfolio-img-sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                                <div class="portfolio-img-btn">
-                                    <a href="#" class="portfolio-img-links">Live</a>
-                                    <a href="#" class="portfolio-img-links">Source Code</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-img-div col-md-4">
-                                <figure class="portfolio-img-figure">
-                                    <img src="images/ex6.png" alt="" class="portfolio-image">
-                                    <figcaption class="portfolio-img-figcaption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Creative Design</h5>
-                                        <span class="portfolio-img-sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                                <div class="portfolio-img-btn">
-                                    <a href="#" class="portfolio-img-links">Live</a>
-                                    <a href="#" class="portfolio-img-links">Source Code</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-img-div col-md-4">
-                                <figure class="portfolio-img-figure">
-                                    <img src="images/ex7.png" alt="" class="portfolio-image">
-                                    <figcaption class="portfolio-img-figcaption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Creative Design</h5>
-                                        <span class="portfolio-img-sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                                <div class="portfolio-img-btn">
-                                    <a href="#" class="portfolio-img-links">Live</a>
-                                    <a href="#" class="portfolio-img-links">Source Code</a>
-                                </div>
-                            </div>
-                            <div class="portfolio-img-div col-md-4">
-                                <figure class="portfolio-img-figure">
-                                    <img src="images/ex9.png" alt="" class="portfolio-image">
-                                    <figcaption class="portfolio-img-figcaption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Creative Design</h5>
-                                        <span class="portfolio-img-sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                                <div class="portfolio-img-btn">
-                                    <a href="#" class="portfolio-img-links">Live</a>
-                                    <a href="#" class="portfolio-img-links">Source Code</a>
+                                    <a href="https://cornelldev.github.io/Blogr" target="_blank" class="portfolio-img-links">Live</a>
+                                    <a href="https://github.com/cornelldev/Blogr" target="_blank" class="portfolio-img-links">Source Code</a>
                                 </div>
                             </div>
                             <div class="portfolio-img-div col-md-4">
@@ -465,27 +381,65 @@
                                     <img src="images/ex3.png" alt="" class="portfolio-image">
                                     <figcaption class="portfolio-img-figcaption">
                                         <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Creative Design</h5>
-                                        <span class="portfolio-img-sub-title">Photography</span>
+                                        <h5 class="portfolio-img-title">Ehanced Services</h5>
+                                        <span class="portfolio-img-sub-title">Stack: <br>
+                                            <span class="portfolio-sub-title-stack">
+                                                <span>Html</span>
+                                                <span>CSS</span>
+                                                <span>Javascript</span>
+                                                <span>Bootsrap</span> <br>
+                                                <P class="portfolio-sub-title-time">Time: 10 Hours</P>
+                                            </span>
+                                        </span>
                                     </figcaption>
                                 </figure>
                                 <div class="portfolio-img-btn">
-                                    <a href="#" class="portfolio-img-links">Live</a>
-                                    <a href="#" class="portfolio-img-links">Source Code</a>
+                                    <a href="https://cornelldev.github.io/Sunnyside-agency-landing-page" target="_blank" class="portfolio-img-links">Live</a>
+                                    <a href="https://github.com/cornelldev/Sunnyside-agency-landing-page" target="_blank" class="portfolio-img-links">Source Code</a>
                                 </div>
                             </div>
                             <div class="portfolio-img-div col-md-4">
                                 <figure class="portfolio-img-figure">
-                                    <img src="images/ex10.png" alt="" class="portfolio-image">
+                                    <img src="images/ex2.png" alt="" class="portfolio-image">
                                     <figcaption class="portfolio-img-figcaption">
                                         <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Creative Design</h5>
-                                        <span class="portfolio-img-sub-title">Photography</span>
+                                        <h5 class="portfolio-img-title">Ehanced Services</h5>
+                                        <span class="portfolio-img-sub-title">Stack: <br>
+                                            <span class="portfolio-sub-title-stack">
+                                                <span>Html</span>
+                                                <span>CSS</span>
+                                                <span>Javascript</span>
+                                                <span>Bootsrap</span> <br>
+                                                <P class="portfolio-sub-title-time">Time: 10 Hours</P>
+                                            </span>
+                                        </span>
                                     </figcaption>
                                 </figure>
                                 <div class="portfolio-img-btn">
-                                    <a href="#" class="portfolio-img-links">Live</a>
-                                    <a href="#" class="portfolio-img-links">Source Code</a>
+                                    <a href="https://cornelldev.github.io/Coperate_Landing_Page/" target="_blank" class="portfolio-img-links">Live</a>
+                                    <a href="https://github.com/cornelldev/Coperate_Landing_Page" target="_blank" class="portfolio-img-links">Source Code</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-img-div col-md-4">
+                                <figure class="portfolio-img-figure">
+                                    <img src="images/ex4.png" alt="" class="portfolio-image">
+                                    <figcaption class="portfolio-img-figcaption">
+                                        <i class="fa fa-search"></i>
+                                        <h5 class="portfolio-img-title">Ehanced Services</h5>
+                                        <span class="portfolio-img-sub-title">Stack: <br>
+                                            <span class="portfolio-sub-title-stack">
+                                                <span>Html</span>
+                                                <span>CSS</span>
+                                                <span>Javascript</span>
+                                                <span>Bootsrap</span> <br>
+                                                <P class="portfolio-sub-title-time">Time: 10 Hours</P>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                <div class="portfolio-img-btn">
+                                    <a href="https://cornell.netlify.app/" target="_blank" class="portfolio-img-links">Live</a>
+                                    <a href="https://github.com/cornelldev/Portfolio" target="_blank" class="portfolio-img-links">Source Code</a>
                                 </div>
                             </div>
                         </div>
@@ -496,24 +450,11 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="menu-div">
-            <nav class="nav-bar">
-                <a href="" class="custom-toggle" data-board="#about-me-box">About Me</a>
-                <a href="" class="custom-toggle" data-board="#work-history">Work History</a>
-                <a href="" class="custom-toggle" data-board="#contact-me">Contact Me</a>
-                <a href="" class="" data-toggle="modal" data-target="#gallery">Project</a>
-              </nav>
-        </div>
-    </footer>
 
 
     
 
-
-
-
-
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     <!-- bootsrap Js -->
