@@ -857,9 +857,6 @@ select.form-control[multiple], select.form-control[size], textarea.form-control 
     .review-rating{
         padding-left: 0rem;
     }
-    .portfolio-img-figure{
-        height: 30vh;
-    }
 }
 @keyframes fade-in {
     from {opacity: 0; transform: scale(.7, .7)}
