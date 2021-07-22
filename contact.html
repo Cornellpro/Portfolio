@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/010d390f1b.js" crossorigin="anonymous"></script>
+    <title>Cornell pro</title>
+</head>
+<body>
+    <!-- mobile hamburger menu -->
+    <div class="hamburger-div" onclick="navMenu()">
+        <button class="hamburger" aria-label="Menu Options">
+          <span class="hamburger-bars"></span>
+        </button>
+    </div>
+
+    <!-- nav bar -->
+    <nav id="navMenu" class="mobile-menu-box fade-this">
+        <div class="moblie-menu-div">
+            <nav class="mobile-nav-bar">
+                <a href="index.html">About Me</a>
+                <a href="resume.html">Work History</a>
+                <a href="contact.html">Contact Me</a>
+                <a href="" class="" data-toggle="modal" data-target="#gallery">Project</a>
+            </nav>
+        </div>
+    </nav>
+    
+    <div class="png-bg">
+        <div class="container">
+            <div class="">
+                <!--This div for content section(right-column)-->
+                <div class="col-12 col-md-12 col-xl-9 main fade-this">
+                    
+                    <div class="box shadow">
+                         <!-- nav bar -->
+                        <nav class="desktop-nav-menu">
+                            <div class="desktop-nav-bar">
+                                <a href="index.html">About Me</a>
+                                <a href="resume.html">Work History</a>
+                                <a href="contact.html">Contact Me</a>
+                                <a href="" class="" data-toggle="modal" data-target="#gallery">Project</a>
+                            </div>
+                        </nav>
+
+                        <!--CONTACT ME-->
+                        <div id="contact-me">
+                            <h1 class="title title--h1 title__separate">Contact</h1>
+                            <h5>Contact Form</h5>
+                            <form class="contact-form">
+                                <!---->
+                                <div class="row">
+                                    <div class="form-group col-12 col-md-6">
+                                        <i class="far fa-user font-icon"></i>
+                                        <input type="text" id="name" placeholder="Full name" autocomplete="on" class="input form-control">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-12 col-md-6">
+                                        <i class="far fa-envelope font-icon"></i>
+                                        <input type="email" id="email" placeholder="Email address" autocomplete="on" class="input form-control">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-12 col-md-12">
+                                        <textarea id="message" placeholder="Your Message" rows="4" class="textarea form-control"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <button type="submit" class="send-btn">
+                                        <i class="far fa-paper-plane"></i><span>Send Message</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--GALLERY MODAL-->
+
+    <div id="gallery" class="modal fade right" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog modal-xl modal-notify modal-info" role="document">
+            <div class="modal-content">
+                <!--Modal Body-->
+                <!--Gallery-->
+                <div class="modal-body custom-modal-body">
+                    <h1 class="gallery-title">PROJECTS</h1>
+                    <div class="portfolio-section">
+                        <div class="portfolio-nav">
+                            <ul class="portfolio-nav-ul">
+                                <li class="portfolio-nav-ul-li">
+                                    <span>Web Design</span>
+                                </li>
+                                <!--close button at header-->
+                                <button type="button" class="close portfolio-close-icon" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" ><i class="far fa-times-circle"></i></span>
+                                </button>
+                            </ul>
+                        </div>
+
+                        <!-- portfolio gallery -->
+                        <div class="portfolio-gallery row">
+                            <div class="portfolio-img-div col-md-4">
+                                <figure class="portfolio-img-figure">
+                                    <img src="images/ex1.png" alt="" class="portfolio-image">
+                                    <figcaption class="portfolio-img-figcaption">
+                                        <h5 class="portfolio-img-title">Blogr Landing page</h5>
+                                        <span class="portfolio-img-sub-title">Stack: <br>
+                                            <span class="portfolio-sub-title-stack">
+                                                <span>Html</span>
+                                                <span>CSS</span>
+                                                <span>Javascript</span> <br>
+                                                <P class="portfolio-sub-title-time">Time: 10 Hours</P>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                <div class="portfolio-img-btn">
+                                    <a href="https://cornelldev.github.io/Blogr" target="_blank" class="portfolio-img-links">Live</a>
+                                    <a href="https://github.com/cornelldev/Blogr" target="_blank" class="portfolio-img-links">Source Code</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-img-div col-md-4">
+                                <figure class="portfolio-img-figure">
+                                    <img src="images/ex3.png" alt="" class="portfolio-image">
+                                    <figcaption class="portfolio-img-figcaption">
+                                        <h5 class="portfolio-img-title">SunnySide Agency</h5>
+                                        <span class="portfolio-img-sub-title">Stack: <br>
+                                            <span class="portfolio-sub-title-stack">
+                                                <span>Html</span>
+                                                <span>CSS</span>
+                                                <span>Javascript</span><br>
+                                                <P class="portfolio-sub-title-time">Time: 10 Hours</P>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                <div class="portfolio-img-btn">
+                                    <a href="https://cornelldev.github.io/Sunnyside-agency-landing-page" target="_blank" class="portfolio-img-links">Live</a>
+                                    <a href="https://github.com/cornelldev/Sunnyside-agency-landing-page" target="_blank" class="portfolio-img-links">Source Code</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-img-div col-md-4">
+                                <figure class="portfolio-img-figure">
+                                    <img src="images/ex2.png" alt="" class="portfolio-image">
+                                    <figcaption class="portfolio-img-figcaption">
+                                        <i class="fa fa-search"></i>
+                                        <h5 class="portfolio-img-title">Ehanced Services</h5>
+                                        <span class="portfolio-img-sub-title">Stack: <br>
+                                            <span class="portfolio-sub-title-stack">
+                                                <span>Html</span>
+                                                <span>CSS</span>
+                                                <span>Javascript</span>
+                                                <span>Bootsrap</span> <br>
+                                                <P class="portfolio-sub-title-time">Time: 10 Hours</P>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                <div class="portfolio-img-btn">
+                                    <a href="https://cornelldev.github.io/Coperate_Landing_Page/" target="_blank" class="portfolio-img-links">Live</a>
+                                    <a href="https://github.com/cornelldev/Coperate_Landing_Page" target="_blank" class="portfolio-img-links">Source Code</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-img-div col-md-4">
+                                <figure class="portfolio-img-figure">
+                                    <img src="images/ex4.png" alt="" class="portfolio-image">
+                                    <figcaption class="portfolio-img-figcaption">
+                                        <h5 class="portfolio-img-title">My Portfolio</h5>
+                                        <span class="portfolio-img-sub-title">Stack: <br>
+                                            <span class="portfolio-sub-title-stack">
+                                                <span>Html</span>
+                                                <span>CSS</span>
+                                                <span>Javascript</span>
+                                                <span>Bootsrap</span> <br>
+                                                <P class="portfolio-sub-title-time">Time: 10 Hours</P>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                <div class="portfolio-img-btn">
+                                    <a href="https://cornell.netlify.app/" target="_blank" class="portfolio-img-links">Live</a>
+                                    <a href="https://github.com/cornelldev/Portfolio" target="_blank" class="portfolio-img-links">Source Code</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-img-div col-md-4">
+                                <figure class="portfolio-img-figure">
+                                    <img src="images/ex5.png" alt="" class="portfolio-image">
+                                    <figcaption class="portfolio-img-figcaption">
+                                        <h5 class="portfolio-img-title">LoopStudios</h5>
+                                        <span class="portfolio-img-sub-title">Stack: <br>
+                                            <span class="portfolio-sub-title-stack">
+                                                <span>Html</span>
+                                                <span>CSS</span>
+                                                <span>Javascript</span>
+                                                <span>Bootsrap</span> <br>
+                                                <P class="portfolio-sub-title-time">Time: 10 Hours</P>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                <div class="portfolio-img-btn">
+                                    <a href="https://cornelldev.github.io/Loopstudios/" target="_blank" class="portfolio-img-links">Live</a>
+                                    <a href="https://github.com/cornelldev/Loopstudios" target="_blank" class="portfolio-img-links">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- bootsrap Js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

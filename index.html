@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/010d390f1b.js" crossorigin="anonymous"></script>
     <title>Cornell pro</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- mobile hamburger menu -->
@@ -22,9 +21,9 @@
     <nav id="navMenu" class="mobile-menu-box fade-this">
         <div class="moblie-menu-div">
             <nav class="mobile-nav-bar">
-                <a href="" class="custom-toggle" data-board="#about-me-box">About Me</a>
-                <a href="" class="custom-toggle" data-board="#work-history">Work History</a>
-                <a href="" class="custom-toggle" data-board="#contact-me">Contact Me</a>
+                <a href="#about-me-box">About Me</a>
+                <a href="resume.html">Work History</a>
+                <a href="contact.html">Contact Me</a>
                 <a href="" class="" data-toggle="modal" data-target="#gallery">Project</a>
             </nav>
         </div>
@@ -33,7 +32,7 @@
 
     
     <div class="png-bg">
-        <div class="container">
+        <div class="container about-container">
             <div class="row">
                 <!--This div for profile sectiion (left-column)-->
                 <aside class="col-12 col-md-12 col-xl-3">
@@ -70,15 +69,15 @@
                          <!-- nav bar -->
                         <nav class="desktop-nav-menu">
                             <div class="desktop-nav-bar">
-                                <a href="" class="custom-toggle" data-board="#about-me-box">About Me</a>
-                                <a href="" class="custom-toggle" data-board="#work-history">Work History</a>
-                                <a href="" class="custom-toggle" data-board="#contact-me">Contact Me</a>
+                                <a href="#about-me-box">About Me</a>
+                                <a href="resume.html">Work History</a>
+                                <a href="contact.html">Contact Me</a>
                                 <a href="" class="" data-toggle="modal" data-target="#gallery">Project</a>
                             </div>
                         </nav>
 
                         <!--ABOUT ME-->
-                        <div id="about-me-box" class="custom-body">
+                        <div id="about-me-box">
                             <div class="">
                                 <div class="pb-0 pb-sm-2">
                                     <h1  class="title title--h1 title__separate">About Me</h1>
@@ -223,103 +222,6 @@
                             </div>
                         </div>
 
-                        <!--RESUME-->
-                        <div id="work-history" class="custom-body">
-                            <h4 class="title title--h1 title__separate">Resume</h4>
-                            <div class="experience">
-                                <i class="fas fa-briefcase"></i>
-                                <h5>Experience</h5>
-                            </div>
-                            <div>
-                                <ul class="row">
-                                    <li class="col-12 col-lg-6">
-                                        <div class="job-main">
-                                            <div class="job-title">
-                                                <i class="far fa-check-circle"></i>
-                                                <h6>Upwork</h6>
-                                            </div>
-                                            <div class="p-div">
-                                                <p class="job-date">2018 - present</p>
-                                                <p class="job-description">
-                                                    Currently a freelancer on upwork with more than 15 completed projects and over 150 work hours.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="col-12 col-lg-6">
-                                        <div class="job-main">
-                                            <div class="job-title">
-                                                <i class="far fa-check-circle"></i>
-                                                <h6>Microsoft</h6>
-                                            </div>
-                                            <div class="p-div">
-                                                <p class="job-date">April 2019 - present</p>
-                                                <p class="job-description">
-                                                    Worked as a Junior Software Developer at Microsoft.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="col-12 col-lg-6">
-                                        <div class="job-main">
-                                            <div class="job-title">
-                                                <i class="far fa-check-circle"></i>
-                                                <h6>Globasure Technologies Ltd</h6>
-                                            </div>
-                                            <div class="p-div">
-                                                <p class="job-date">March 2013 - Jan 2015</p>
-                                                <p class="job-description">
-                                                    Worked as a software developer at Globasure Ltd.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="col-12 col-lg-6">
-                                        <div class="job-main">
-                                            <div class="job-title">
-                                                <i class="far fa-check-circle"></i>
-                                                <h6>Plant for the Planet Organisation
-                                                </h6>
-                                            </div>
-                                            <div class="p-div">
-                                                <p class="job-date">April 2007 - Nov 2019</p>
-                                                <p class="job-description">
-                                                    Worked as a Software Developer at Plant-for-the-Planet.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!--CONTACT ME-->
-                        <div id="contact-me" class="custom-body">
-                            <h1 class="title title--h1 title__separate">Contact</h1>
-                            <h5>Contact Form</h5>
-                            <form class="contact-form">
-                                <!---->
-                                <div class="row">
-                                    <div class="form-group col-12 col-md-6">
-                                        <i class="far fa-user font-icon"></i>
-                                        <input type="text" id="name" placeholder="Full name" autocomplete="on" class="input form-control">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="form-group col-12 col-md-6">
-                                        <i class="far fa-envelope font-icon"></i>
-                                        <input type="email" id="email" placeholder="Email address" autocomplete="on" class="input form-control">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="form-group col-12 col-md-12">
-                                        <textarea id="message" placeholder="Your Message" rows="4" class="textarea form-control"></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <button type="submit" class="send-btn">
-                                        <i class="far fa-paper-plane"></i><span>Send Message</span>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -340,11 +242,6 @@
                             <ul class="portfolio-nav-ul">
                                 <li class="portfolio-nav-ul-li">
                                     <span>Web Design</span>
-                                    <!-- web design thumbnails onhover(pc) should show "source code and view live btns" -->
-                                </li>
-                                <li class="portfolio-nav-ul-li">
-                                    <span>Mockups</span>
-                                    <!-- mock ups thumbnails on-click should up item behance link -->
                                 </li>
                                 <!--close button at header-->
                                 <button type="button" class="close portfolio-close-icon" data-dismiss="modal" aria-label="Close">
@@ -353,13 +250,13 @@
                             </ul>
                         </div>
 
+                        <!-- portfolio gallery -->
                         <div class="portfolio-gallery row">
                             <div class="portfolio-img-div col-md-4">
                                 <figure class="portfolio-img-figure">
                                     <img src="images/ex1.png" alt="" class="portfolio-image">
                                     <figcaption class="portfolio-img-figcaption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Ehanced Services</h5>
+                                        <h5 class="portfolio-img-title">Blogr Landing page</h5>
                                         <span class="portfolio-img-sub-title">Stack: <br>
                                             <span class="portfolio-sub-title-stack">
                                                 <span>Html</span>
@@ -379,8 +276,7 @@
                                 <figure class="portfolio-img-figure">
                                     <img src="images/ex3.png" alt="" class="portfolio-image">
                                     <figcaption class="portfolio-img-figcaption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Ehanced Services</h5>
+                                        <h5 class="portfolio-img-title">SunnySide Agency</h5>
                                         <span class="portfolio-img-sub-title">Stack: <br>
                                             <span class="portfolio-sub-title-stack">
                                                 <span>Html</span>
@@ -422,8 +318,7 @@
                                 <figure class="portfolio-img-figure">
                                     <img src="images/ex4.png" alt="" class="portfolio-image">
                                     <figcaption class="portfolio-img-figcaption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="portfolio-img-title">Ehanced Services</h5>
+                                        <h5 class="portfolio-img-title">My Portfolio</h5>
                                         <span class="portfolio-img-sub-title">Stack: <br>
                                             <span class="portfolio-sub-title-stack">
                                                 <span>Html</span>
@@ -438,6 +333,27 @@
                                 <div class="portfolio-img-btn">
                                     <a href="https://cornell.netlify.app/" target="_blank" class="portfolio-img-links">Live</a>
                                     <a href="https://github.com/cornelldev/Portfolio" target="_blank" class="portfolio-img-links">Source Code</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-img-div col-md-4">
+                                <figure class="portfolio-img-figure">
+                                    <img src="images/ex5.png" alt="" class="portfolio-image">
+                                    <figcaption class="portfolio-img-figcaption">
+                                        <h5 class="portfolio-img-title">LoopStudios</h5>
+                                        <span class="portfolio-img-sub-title">Stack: <br>
+                                            <span class="portfolio-sub-title-stack">
+                                                <span>Html</span>
+                                                <span>CSS</span>
+                                                <span>Javascript</span>
+                                                <span>Bootsrap</span> <br>
+                                                <P class="portfolio-sub-title-time">Time: 10 Hours</P>
+                                            </span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                                <div class="portfolio-img-btn">
+                                    <a href="https://cornelldev.github.io/Loopstudios/" target="_blank" class="portfolio-img-links">Live</a>
+                                    <a href="https://github.com/cornelldev/Loopstudios" target="_blank" class="portfolio-img-links">Source Code</a>
                                 </div>
                             </div>
                         </div>
