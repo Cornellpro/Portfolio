@@ -236,7 +236,7 @@ ul{
 .title__separate {
     margin-bottom: 2rem;
     position: relative;
-    width: fit-content;
+    width: 50%;
 }
 
 p {
