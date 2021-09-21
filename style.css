@@ -798,7 +798,7 @@ select.form-control[multiple], select.form-control[size], textarea.form-control 
     /* Nav menu */
     .mobile-menu-box{
         display: none;
-        width: 100%;
+        width: 55%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.95);
         position: fixed;
